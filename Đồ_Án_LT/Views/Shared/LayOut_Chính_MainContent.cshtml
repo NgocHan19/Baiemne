@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" />
+    <link href="~/Content/MasterStyle.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div id="div_QuangCaoFull">QuangCao</div>
+    <div id="div_QuangCaoNho">QuangCaoNho</div>
+    <div id="Thu_muc">
+        <ul class="fm-thumuc">
+            <li>
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-07-2023/Icon_B2S_1.png" />
+                <a hrel="ThuMuc_1" class="fm-link-thumuc">Trở Lại Trường Học</a>
+            </li>
+            <li>
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-09-2023/F3Thang9_120x120.png" />
+                <a hrel="ThuMuc_2" class="fm-link-thumuc">Sale Thứ 3</a>
+            </li>
+            <li>
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_FlashSale_Thuong_120x120.png" />
+                <a hrel="ThuMuc_3" class="fm-link-thumuc">Flase Sale</a>
+            </li>
+            <li>
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/IconDoChoi_Thuong_120x120.png" />
+                <a hrel="ThuMuc_4" class="fm-link-thumuc">Đồ Chơi</a>
+            </li>
+            <li>
+                @*Chưa có hình*@
+                <img src="" />
+                <a hrel="ThuMuc_5" class="fm-link-thumuc">Văn Phòng Phẩm</a>
+            </li>
+            <li>
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-09-2023/Icon_ThieuNhi_Thuong_120x120.png" />
+                <a hrel="ThuMuc_6" class="fm-link-thumuc">Thiếu Nhi</a>
+            </li>
+            <li>
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_SanPhamMoi_8px_1.png" />
+                <a hrel="ThuMuc_7" class="fm-link-thumuc">Sản Phẩm Mới</a>
+            </li>
+            <li>
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Manga_Week_Hot.png" />
+                <a hrel="ThuMuc_8" class="fm-link-thumuc" Manga></a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        Main Content
+        @RenderBody()
+    </div>
+    <div class="buttomDiv">
+        <form id="newRegister">
+            @*<div class="Register">*@
+                
+                <h1>ĐĂNG KÝ NHẬN BẢN TIN</h1>
+                <input type="email" id="Email" placeholder="Nhập địa chỉ email của bạn..." style="line-height:20px; padding:5px 15px; border-radius:15px; width:500px"/>
+                <input type="button" id="register" value="Đăng ký" style="line-height:20px; padding:5px 15px; border-radius:15px; width:100px; background-color:yellow; margin-left:-105px" />
+            @*</div>*@
+        </form>
+    </div>
+
+
+</body>
+</html>
